@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'udemy-max-assignment2';
+  name = 'ahtazaz';
+
+  getIsButtonDisabled = () => {
+    return this.name == '';
+  }
+
+  onButtonClicked = () => {
+    this.name = '';
+  }
 }
